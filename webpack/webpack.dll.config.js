@@ -16,7 +16,7 @@ module.exports = {
   },
 
   output: {
-    path: resolvePath('node_modules/react-skeleton/dll'),
+    path: resolvePath('node_modules/vanillajs-skeleton/dll'),
     filename: '[name].dll.js',
     library: '_dll_[name]_[hash]',
     libraryTarget: 'var',
@@ -26,7 +26,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new webpack.DllPlugin({
       path: resolvePath(
-        'node_modules/react-skeleton/dll',
+        'node_modules/vanillajs-skeleton/dll',
         '[name].manifest.json',
       ),
       name: '_dll_[name]_[hash]', // 和library设置的一致，输出的manifest.json中的name值
