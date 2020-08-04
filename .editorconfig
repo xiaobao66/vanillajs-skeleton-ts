@@ -1,0 +1,20 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# 声明该文件为最顶层，文件查找到此为止
+root = true
+
+# 对所有文件生效
+[*]
+# 编码相关
+charset = utf-8
+end_of_line = lf
+# 缩进相关
+indent_style = space
+indent_size = 2
+
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# 对后缀名为 md 的文件生效
+[*.md]
+trim_trailing_whitespace = false
