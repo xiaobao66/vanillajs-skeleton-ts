@@ -10,12 +10,12 @@
   ],
   "scripts": {
     "start": "npm run dll && npm run dev",
-    "dev": "cross-env NODE_ENV=development node webpack/webpack-dev-server.js",
-    "dev:release": "npm run dev -- --release",
-    "build": "cross-env NODE_ENV=production webpack --config  webpack/webpack.config.js --release",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --env.mode development",
+    "build": "cross-env NODE_ENV=production webpack --env.mode production",
     "build:analyze": "npm run build -- --analyze",
     "dll": "webpack --config webpack/webpack.dll.config.js --mode development",
-    "eslint": "eslint --ext .ts --ext .tsx src -c .eslintrc.js --ignore-pattern node_modules"
+    "eslint": "eslint --ext .ts src -c .eslintrc.js --ignore-pattern node_modules",
+    "tsc:lint": "tsc --noEmit"
   },
   "author": "xiaobaowei",
   "license": "ISC",
@@ -66,11 +66,12 @@
     "typescript": "^3.9.6",
     "url-loader": "^4.1.1",
     "webpack": "^4.41.2",
-    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-bundle-analyzer": "^3.9.0",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0",
     "webpack-hot-middleware": "^2.25.0",
-    "yargs": "^15.0.2"
+    "webpack-merge": "^5.3.0",
+    "yargs": "^16.1.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.12.5",
