@@ -54,6 +54,7 @@ module.exports = env => {
 
       devServer: {
         port,
+        publicPath: '/',
         hot: true,
         historyApiFallback: true,
         overlay: true,
