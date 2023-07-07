@@ -58,7 +58,7 @@
     "prettier": "^2.1.2",
     "resolve-url-loader": "^3.1.2",
     "sass-loader": "^10.0.5",
-    "stylelint": "^13.7.2",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "svg-url-loader": "^6.0.0",
